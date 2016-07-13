@@ -5,6 +5,12 @@ $('a').click(function(){
     return false;
 });
 
+$('video').on('ended', function () {
+	alert("whe");
+  this.load();
+  this.play();
+});
+
 (function($) {
 
   /**
