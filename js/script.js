@@ -62,3 +62,27 @@ win.scroll(function(event) {
   });
   
 });
+
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    $('#intro').css({
+        'opacity': ((height - scrollTop) / height)
+    });
+});
+
+
+$('.grid').masonry({
+    itemSelector : '.grid-item', 
+    gutterWidth: 15
+  });
+
+
+
+
+
+
+
+
+
+

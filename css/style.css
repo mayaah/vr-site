@@ -97,17 +97,11 @@ a {
 }
 
 #intro {
-    height: 900px;
-
+    height: 100vh;
 
 }
 
 a.sidebar-item:focus .sidebar-line {
-    width: 100%;
-    background: #1DB3E2;
-}
-
-.sidebar-line .active {
     width: 100%;
     background: #1DB3E2;
 }
@@ -157,7 +151,7 @@ img#logo{
 }
 
 #about {
-    height: 900px;
+    height: 100vh;
     background-color: white;
     display: flex;
     align-items: center; 
@@ -170,7 +164,40 @@ img#logo{
     text-align: right;
 }
 
+#mission a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #03DF9B;
+    font-weight: 500;
+}
 
+#research {
+    display: flex;
+    align-items: center; 
+    background-color: #03DF9B;
+    height: 100vh;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+#research a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+#research li:hover {
+    font-weight: 500;
+}
+
+#technology {
+    background-color: #0D4E62;
+    height: 100vh;
+}
 
 .come-in {
   transform: translateY(500px);
@@ -199,3 +226,11 @@ img#logo{
         display: none;
     }
 }
+
+.grid {
+    width: 600px;
+}
+
+.grid-item { width: 30%; float: left;}
+
+.grid-item img {width: 100%;}

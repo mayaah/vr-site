@@ -11,6 +11,7 @@
     <![endif]-->
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Virtual Reality at Berkeley</title>
+    <link rel="icon" href="http://vr.berkeley.edu/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -26,11 +27,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body data-spy="scroll" data-target=".sidebar" data-offset="50">
+  <body data-spy="scroll" data-target=".sidebar">
     <ul class="sidebar" style="transform: matrix(1, 0, 0, 1, 0, -16);">
       <li>
         <a href="#intro" class="sidebar-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-          <span class="sidebar-line" style="background-position: 0% 0px;"></span></a>
+          <span class="sidebar-line" id="intro-line" style="background-position: 0% 0px;"></span></a>
          <a href="#about" class="sidebar-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
           <span class="sidebar-line" style="background-position: 0% 0px;"></span></a>
          <a href="#research" class="sidebar-item" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
@@ -87,8 +88,90 @@
       <div class="container float-in" id="mission">
         <div class="row">
           <div class="col-lg-12">
-            We seek to foster a <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">community</span> of Berkeley students, industry, and academia to increase public awareness of <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">virtual reality (VR)</span>, provide developer <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">resources</span> and <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">training</span>, and <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">promote dialogue</span> about the applications and implications of VR. Our members receive training in <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">cutting edge technology</span>, develop on VR platforms, and explore the <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">intersection of physical and virtual reality</span>.
+            We seek to foster a <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">community</span> of Berkeley students, industry, and academia to increase public awareness of <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">virtual reality (VR)</span>, provide developer <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">resources</span> and <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">training</span>, and <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">promote dialogue</span> about the applications and implications of VR. Our members receive training in <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">cutting edge technology</span>, develop on VR platforms, and explore the <span style="color:#1DB3E2; font-weight:300; font-size: 50px;">intersection of physical and virtual reality</span>.<br><br>
+            <a href="about.html">MORE INFO</a>
           </div>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research">
+      <div class="container float-in">
+        <div class="row">
+          <div class="col-lg-4" id="fa15">
+            <img class="ricons" src="media/drone.png">
+            <br>
+            <span style="font-size: 80px; line-height: 1em;">FALL 2015</span>
+            <li>Augmented Reality Interfaces for Drone Control</li>
+            <li>Heads-up Display Augmented Reality Glasses</li>
+            <li>Simultaneous Localization and Mapping (SLAM)
+with Google Tango</li>
+            <li>Visualizing 3D and 4D MRI Data with the Rift</li>
+            <li>Virtual Campanile</li>
+            <li>Oculus Demos with the Force-Feedback Triple-Axis
+Motion Simulator</li>
+            <li>VR Demos for Halloween</li>
+            <li><a href="media/vrabprojectsfa15.pdf">MORE</a></li>
+          </div>
+          <div class="col-lg-4">
+            <img class="ricons" src="media/headset.png">
+            <br>
+            <span style="font-size: 80px; line-height: 1em;">SPRING 2016</span>
+            <li>Berkeley Immersive Augmented Reality Glasses </li>
+            <li>AR Applications in Medicine</li>
+            <li>Virtual Campanile</li>
+            <li>Landships</li>
+            <li>VR Animation</li>
+            <li>Augmented Textbooks w/ Cardboard</li>
+            <li>Cardboard Platform Extensions</li>
+            <li>Immersive Storytelling for Kids</li>
+            <li>Simultaneous Location and Mapping of Drones</li>
+            <li><a href="media/vrprojectssp16.pdf">MORE</a></li>
+          </div>
+          <div class="col-lg-4">
+            <img class="ricons" src="media/question.png">
+            <br>
+            <span style="font-size: 80px; line-height: 1em;">FALL 2016</span>
+            <li>AR Textbooks</li>
+            <li>Animated Short</li>
+            <li>Party Games</li>
+            <li>Dark VR</li>
+            <li>Storytelling</li>
+            <li>ISAACS</li>
+            <li>Training Team</li>
+            <li>HUD</li>
+            <li>Neural Nets</li>
+            <li><a href="">JOIN NOW</a></li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="grid">
+              <div class="grid-item"><img src="media/hololens.png"></div>
+              <div class="grid-item"><img src="media/blender.png"></div>
+              <div class="grid-item"><img src="media/automaya.png"></div>
+              <div class="grid-item"><img src="media/opengl.png"></div>
+              <div class="grid-item"><img src="media/android.png"></div>
+              <div class="grid-item"><img src="media/oculus.png"></div>
+              <div class="grid-item"><img src="media/leap.png"></div>
+              <div class="grid-item"><img src="media/unity.png"></div>
+              <div class="grid-item"><img src="media/flstudio.png"></div>
+              <div class="grid-item"><img src="media/tango.png"></div>
+              <div class="grid-item"><img src="media/cardboard.png"></div>
+              <div class="grid-item"><img src="media/vicon.png"></div>
+              <div class="grid-item"><img src="media/dji.png"></div>
+              <div class="grid-item"><img src="media/emotiv.png"></div>
+              <div class="grid-item"><img src="media/zspace.png"></div>
+              <div class="grid-item"><img src="media/opencv.png"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -97,5 +180,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery_masonry_min.js"></script>
   </body>
 </html>
