@@ -72,15 +72,6 @@ $(window).scroll(function () {
 });
 
 
-$('.grid').masonry({
-    itemSelector : '.grid-item', 
-    gutterWidth: 15
-  });
-
-
-
-
-
 
 
 

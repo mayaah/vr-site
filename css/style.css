@@ -2,6 +2,7 @@ html {
 	height: 100%;
 }
 
+
 body {
 	padding: 0;
 	margin: 0;
@@ -9,6 +10,85 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
+
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 20px auto 0;
+    padding: 14px 15px;
+    color: #1AA4C7;
+    font-size:15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+   /* text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);*/
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 20px auto 0;
+    padding: 14px 15px;
+    color: #1AA4C7;
+    font-size:15px;
+    border-radius: 0;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+/*    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+*/    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a.animated-button.join-button {
+    border: 2px solid #1AA4C7;
+}
+a.animated-button.join-button:after {
+    background: #1AA4C7;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+
+
+
 
 .sidebarhover {
     font-weight: 300;
@@ -18,7 +98,7 @@ body {
     display: block;
     position: fixed;
     z-index: 12;
-    top: calc(50% - 90px);
+    top: calc(50% - 60px);
     left: 95px;
     transition: all ease-in-out 0.6s;
     color: #1DB3E2;
@@ -38,7 +118,7 @@ body {
     display: block;
     position: fixed;
     z-index: 12;
-    top: calc(50% - 80px);
+    top: calc(50% - 50px);
     left: 32px;
 }
 
@@ -152,7 +232,7 @@ img#logo{
 
 #about {
     height: 100vh;
-    background-color: white;
+    background-color: #FEFFFC;
     display: flex;
     align-items: center; 
 
@@ -194,9 +274,17 @@ img#logo{
     font-weight: 500;
 }
 
+.ricons {
+    width: 125px;
+    border-radius: 50%;
+}
+
 #technology {
-    background-color: #0D4E62;
+    background: #FEFFFC;
     height: 100vh;
+    display: flex;
+    align-items: center; 
+    text-align: center;
 }
 
 .come-in {
@@ -215,8 +303,65 @@ img#logo{
   to { transform: translateY(0); }
 }
 
+#team {
+    height: 100vh;
+    background-color: #1AA4C7;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    text-decoration: none;
 
+}
 
+#team a {
+    text-decoration: none;
+    color: white;
+}
+
+.teamd {
+    color: white;
+}
+
+.name {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.position {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.year {
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.bio {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.more-info-team {
+    padding-top: 100px;
+
+}
+
+.more-info-team {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#contact {
+    height: 100vh;
+    display: block;
+    background-image: url("../photos/tableopacity.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color:#5D6771; ;
+}
 
 @media screen and (max-device-width: 800px) {
     html {
@@ -228,9 +373,21 @@ img#logo{
 }
 
 .grid {
-    width: 600px;
+/*    display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    max-width: 1200px;
+    padding-left: 100px;
 }
 
-.grid-item { width: 30%; float: left;}
+.grid-item { 
+    display: block;
+    width: 150px;
+    float: left; 
+    margin-top: 80px;
+}
+
 
 .grid-item img {width: 100%;}
+
+
