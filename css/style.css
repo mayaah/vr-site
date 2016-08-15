@@ -318,6 +318,10 @@ img#logo{
     color: white;
 }
 
+.teambox {
+    padding-bottom: 100px;
+}
+
 .teamd {
     color: white;
 }
@@ -327,24 +331,14 @@ img#logo{
     font-weight: 200;
 }
 
-.position {
-    font-size: 30px;
-    font-weight: 200;
-}
-
-.year {
-    font-size: 25px;
-    font-weight: 200;
-}
-
-.bio {
+.leads {
     font-size: 15px;
     font-weight: 200;
 }
 
-.more-info-team {
-    padding-top: 100px;
-
+.description {
+    font-size: 15px;
+    font-weight: 200;
 }
 
 .more-info-team {
@@ -352,6 +346,7 @@ img#logo{
     color: white;
     font-size: 20px;
     font-weight: 500;
+    padding-top: 20px;
 }
 
 #contact {
@@ -360,8 +355,46 @@ img#logo{
     background-image: url("../photos/tableopacity.jpg");
     background-size: 100% 100%;
     text-align: center;
-    color:#5D6771; ;
+    color:#5D6771;
+    display: flex;
+    align-items: center; 
 }
+
+#mc_embed_signup {
+/*    background: rgba(255, 255, 255, .9);*/
+/*    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 10px black;
+    background: #1AA4C7;*/
+
+}
+
+
+#mc_embed_signup_scroll input[type="email"] {
+    width: 500px;
+    padding: 10px;
+    font-weight: 300;
+    color: black;
+}
+
+#mc_embed_signup_scroll input[type="submit"] {
+    width: 500px;
+    background: #1AA4C7;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
+}
+
+.social-media img{
+    width: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+
 
 @media screen and (max-device-width: 800px) {
     html {
