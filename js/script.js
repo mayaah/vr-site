@@ -11,6 +11,10 @@ $('video').on('ended', function () {
   this.play();
 });
 
+function myFunction() {
+    alert("Applications are coming soon!");
+}
+
 // $(document).ready(function(){
 
    // $("section").mouseenter(function(){
@@ -48,7 +52,7 @@ $(document).ready(function(){
         
         // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
       }
-      if ($currentSection.attr('id') == "team"){
+      if ($currentSection.attr('id') == "projects"){
         var id = $currentSection.attr('id');
         $('.sidebar-item .sidebar-line').css({"width": "50%", "background": "white"});
          $('.sidebarhover').css({"color": "white"});
@@ -128,6 +132,7 @@ $(window).scroll(function () {
         'opacity': ((height - scrollTop) / height)
     });
 });
+
 
 
 

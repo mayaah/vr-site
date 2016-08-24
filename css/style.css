@@ -11,6 +11,7 @@ body {
     font-weight: 100;
 }
 
+
 /* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {
     position: relative;
@@ -231,6 +232,8 @@ img#logo{
 	opacity: .9;
 }
 
+@media screen and (min-width: 980px) /* Desktop */ {
+
 #about {
     height: 100vh;
     background-color: #FEFFFC;
@@ -243,6 +246,12 @@ img#logo{
     padding-left: 70px;
     font-size: 40px;
     text-align: right;
+}
+
+.bold {
+    color: #1DB3E2; 
+    font-weight:300; 
+    font-size: 50px;
 }
 
 #mission a{
@@ -288,6 +297,11 @@ img#logo{
     text-align: center;
 }
 
+.techtitle {
+    color: #1DB3E2; 
+    font-size: 65px;
+}
+
 .come-in {
   transform: translateY(500px);
   animation: come-in 2s ease forwards;
@@ -304,7 +318,7 @@ img#logo{
   to { transform: translateY(0); }
 }
 
-#team {
+#projects {
     height: 100vh;
     background-color: #1AA4C7;
     display: flex;
@@ -314,7 +328,7 @@ img#logo{
 
 }
 
-#team a {
+#projects a {
     text-decoration: none;
     color: white;
 }
@@ -337,6 +351,11 @@ img#logo{
     font-weight: 200;
 }
 
+.ticon {
+    width: 125px;
+    border-radius: 50%;
+}
+
 .description {
     font-size: 15px;
     font-weight: 200;
@@ -347,7 +366,7 @@ img#logo{
     color: white;
     font-size: 20px;
     font-weight: 500;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 #contact {
@@ -359,6 +378,20 @@ img#logo{
     color:#5D6771;
     display: flex;
     align-items: center; 
+}
+
+#meetingtime {
+    font-size: 20px; 
+    font-weight: 300;
+}
+
+.joinbtn {
+        width: 500px; 
+        background:#1AA4C7; 
+}
+
+a.joinbtn:link{
+    color: white;
 }
 
 #mc_embed_signup {
@@ -397,17 +430,10 @@ img#logo{
 
 
 
-@media screen and (max-device-width: 800px) {
-    html {
-         background: url(media/ink.png) #000 no-repeat center center fixed;
-    }
-    #bgvid {
-        display: none;
-    }
-}
+
 
 .grid {
-/*    display: block;
+/*    display: block;@
     margin-left: auto;
     margin-right: auto;*/
     max-width: 1200px;
@@ -423,5 +449,352 @@ img#logo{
 
 
 .grid-item img {width: 100%;}
+
+}
+
+@media screen  and (max-width: 979px) /* Tablet */ {
+
+    
+    #about {
+    height: 100vh;
+    background-color: #FEFFFC;
+    display: flex;
+    align-items: center; 
+    }
+
+    img#logo{
+    display: block;
+    width: 275px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    opacity: .9;
+    }
+
+    #mission {
+    padding-left: 70px;
+    font-size: 35px;
+    text-align: right;
+    }
+
+    .bold {
+    color: #1DB3E2; 
+    font-weight:300; 
+    font-size: 40px;
+    }
+
+    #mission a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #03DF9B;
+    font-weight: 500;
+    }
+
+    #projects {
+    height: 1900px;
+    background-color: #1AA4C7;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    text-decoration: none;
+    }
+
+    #projects a {
+    text-decoration: none;
+    color: white;
+    }
+
+    .teambox {
+    padding-bottom: 50px;
+    }
+
+    .teambottomrow {
+        padding-bottom: 50px;
+    }
+
+    .teamd {
+    color: white;
+    }
+
+    .name {
+    font-size: 20px;
+    font-weight: 400;
+    }
+
+
+    .ticon {
+    width: 125px;
+    border-radius: 50%;
+    }
+
+    .description {
+    font-size: 15px;
+    font-weight: 200;
+    }
+
+    .more-info-team {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    }
+
+    #technology {
+    background: #FEFFFC;
+    height: 1500px;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    }
+
+    .techtitle {
+    color: #1DB3E2; 
+    font-size: 65px;
+    }
+
+    .grid {
+    /*    display: block;@
+    margin-left: auto;
+    margin-right: auto;*/
+    max-width: 600px;
+    padding-left: 100px;
+    }
+
+    .grid-item { 
+    display: block;
+    width: 150px;
+    float: left; 
+    margin-top: 80px;
+    }
+
+
+    .grid-item img {width: 100%;}
+
+    #contact {
+    height: 100vh;
+    display: block;
+    background-image: url("../photos/tableopacity.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color:#5D6771;
+    display: flex;
+    align-items: center; 
+    }
+
+    #meetingtime {
+    font-size: 20px; 
+    font-weight: 300;
+    }
+
+    .joinbtn {
+        width: 300px; 
+        background:#1AA4C7; 
+        color: white;
+    }
+
+    #mc_embed_signup_scroll input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    font-weight: 300;
+    color: black;
+    }
+
+    #mc_embed_signup_scroll input[type="submit"] {
+    width: 300px;
+    background: #1AA4C7;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
+    }  
+
+    .social-media img{
+    width: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+
+    .sidebar {
+    display: none;
+    }
+
+    #about {
+    height: 100vh;
+    background-color: #FEFFFC;
+    display: flex;
+    align-items: center; 
+    }
+
+    img#logo{
+    display: block;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    opacity: .9;
+    }
+
+    #mission {
+    padding-left: 70px;
+    font-size: 25px;
+    text-align: right;
+    }
+
+    .bold {
+    color: #1DB3E2; 
+    font-weight:300; 
+    font-size: 30px;
+    }
+
+    #mission a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #03DF9B;
+    font-weight: 500;
+    }
+
+    #projects {
+    height: 2200px;
+    background-color: #1AA4C7;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    text-decoration: none;
+    }
+
+    #projects a {
+    text-decoration: none;
+    color: white;
+    }
+
+    .teambox {
+    padding-bottom: 50px;
+    }
+
+    .teambottomrow {
+        padding-bottom: 50px;
+    }
+
+    .teamd {
+    color: white;
+    }
+
+    .name {
+    font-size: 20px;
+    font-weight: 400;
+    }
+
+
+    .ticon {
+    width: 125px;
+    border-radius: 50%;
+    }
+
+    .description {
+    font-size: 15px;
+    font-weight: 200;
+    }
+
+    .more-info-team {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    }
+
+    #technology {
+    background: #FEFFFC;
+    height: 2500px;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    }
+
+    .techtitle {
+    color: #1DB3E2; 
+    font-size: 55px;
+    }
+
+    .grid {
+    /*    display: block;@
+    margin-left: auto;
+    margin-right: auto;*/
+    max-width: 300px;
+    padding-left: 100px;
+    }
+
+    .grid-item { 
+    display: block;
+    width: 150px;
+    float: left; 
+    margin-top: 80px;
+    }
+
+
+    .grid-item img {width: 100%;}
+
+    #contact {
+    height: 100vh;
+    display: block;
+    background-image: url("../photos/tableopacity.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    color:#5D6771;
+    display: flex;
+    align-items: center; 
+    }
+    #meetingtime {
+    font-size: 15px; 
+    font-weight: 300;
+    }
+
+     .joinbtn {
+        width: 250px; 
+        background:#1AA4C7; 
+        color: white;
+        font-weight: 700;
+
+
+    }
+
+    #mc_embed_signup_scroll input[type="email"] {
+    width: 250px;
+    padding: 10px;
+    font-weight: 300;
+    color: black;
+    }
+
+   
+
+    #mc_embed_signup_scroll input[type="submit"] {
+    width: 250px;
+    background: #1AA4C7;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    border: 0;
+    }
+
+    .social-media img{
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         
+    }
+    #bgvid {
+        display: none;
+    }
+}
+
 
 
