@@ -99,7 +99,7 @@ a.animated-button.join-button:after {
     position: fixed;
     z-index: 12;
     top: calc(50% - 60px);
-    left: 95px;
+    left: 115px;
     transition: all ease-in-out 0.6s;
     color: #1DB3E2;
     text-transform: uppercase;
@@ -113,7 +113,7 @@ a.animated-button.join-button:after {
 }
 
 .sidebar {
-    width: 60px;
+    width: 80px;
     height: 200px;
     display: block;
     position: fixed;
@@ -180,6 +180,7 @@ a {
     height: 100vh;
 
 }
+
 
 a.sidebar-item:focus .sidebar-line {
     width: 100%;
@@ -319,7 +320,7 @@ img#logo{
 }
 
 .teambox {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .teamd {
@@ -327,8 +328,8 @@ img#logo{
 }
 
 .name {
-    font-size: 35px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .leads {
@@ -346,7 +347,7 @@ img#logo{
     color: white;
     font-size: 20px;
     font-weight: 500;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #contact {
